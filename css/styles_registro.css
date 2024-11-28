@@ -1,0 +1,112 @@
+/* Estructura general */
+body {
+    background-color: #e0f7fa;
+    font-family: Arial, sans-serif;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #0047ab;
+    color: #ffffff;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilo para la imagen dinámica */
+.imagen-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#imagenRol {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Campos del formulario */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #f7f9fb;
+}
+
+/* Botón de registro */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #0047ab;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #003380;
+}
+
+/* Enlace de iniciar sesión */
+h3 {
+    font-size: 0.9em;
+    color: #333333;
+}
+
+.btn-iniciar-sesion {
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #cf22e6;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn-iniciar-sesion a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.btn-iniciar-sesion:hover {
+    background-color: #e41f50;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #0047ab;
+    color: #ffffff;
+    font-size: 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

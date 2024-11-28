@@ -1,0 +1,150 @@
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos uniformemente */
+    background-color: #343a40;
+    padding: 15px 0; /* Relleno solo en la parte superior e inferior */
+    border-bottom: 3px solid #444;
+    width: 100vw; /* Asegura que ocupe el ancho completo de la ventana */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+/* Estilo de los enlaces dentro de la barra de navegación */
+.navbar a {
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover para los enlaces */
+.navbar a:hover {
+    background-color: #007bff;
+}
+
+/* Estilos para los botones */
+.button, .save, .cancel, .editBtn, .deleteBtn {
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Botón Nueva Tarea (morado claro) */
+.button, .save, #editTaskBtn, .editBtn {
+    background-color: #6f42c1; /* Morado claro */
+    color: white;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Baja el botón Nueva Tarea y los demás botones alineados */
+}
+
+/* Hover para botones Nueva Tarea y Editar */
+.button:hover, .save:hover, #editTaskBtn:hover, .editBtn:hover {
+    background-color: #5a32a3; /* Morado más oscuro al hacer hover */
+}
+
+/* Estilo del botón Eliminar (rojo) */
+.deleteBtn {
+    background-color: #dc3545; /* Rojo claro */
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.deleteBtn:hover {
+    background-color: #c82333; /* Rojo más oscuro al hacer hover */
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4); /* Fondo oscuro */
+}
+
+/* Contenido del modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ancho del modal */
+}
+
+/* Estilos del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input, form select {
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button.cancel {
+    background-color: #f44336; /* Rojo claro */
+    color: white;
+}
+
+form button.cancel:hover {
+    background-color: #e53935; /* Rojo más oscuro al hacer hover */
+}
+
+/* Estilos de la tabla */
+.table {
+    width: 100%;
+    margin-top: 80px; /* Asegura que la tabla no se superponga a la barra de navegación */
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f4f4f4;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Mensaje de error */
+.error-message {
+    color: red;
+    font-size: 16px;
+    margin-bottom: 15px;
+}

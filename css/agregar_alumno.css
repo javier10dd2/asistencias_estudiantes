@@ -1,0 +1,68 @@
+/* Asegura que el body y el html no tengan márgenes que afecten la barra */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos uniformemente */
+    background-color: #343a40;
+    padding: 15px 0; /* Relleno solo en la parte superior e inferior */
+    border-bottom: 3px solid #444;
+    width: 100vw; /* Asegura que ocupe el ancho completo de la ventana */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+/* Estilo de los enlaces dentro de la barra de navegación */
+.navbar a {
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Añadido color en la transición */
+}
+
+/* Efecto hover para los enlaces */
+.navbar a:hover {
+    background-color: #007bff;
+    color: white; /* Cambia el color de la letra a blanco al pasar el mouse */
+}
+
+/* Ajusta el contenedor principal para que no se superponga a la barra fija */
+.container {
+    margin-top: 120px; /* Este margen asegura que el contenido no quede oculto detrás de la barra fija */
+}
+
+/* Estilo de la tarjeta que contiene el formulario */
+.card {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Ajuste del formulario */
+.card-body {
+    padding: 20px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}

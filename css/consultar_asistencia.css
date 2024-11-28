@@ -1,0 +1,146 @@
+/* Estilo global para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden;
+}
+
+/* Estilo para los encabezados de la tabla */
+table th {
+    background-color: #343a40; /* Gris oscuro */
+    color: #fff; /* Texto blanco */
+    text-transform: uppercase; /* Encabezados en mayúsculas */
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #ddd; /* Borde sutil */
+}
+
+/* Estilo para las celdas de la tabla */
+table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Efecto hover para las filas */
+table tr:hover {
+    background-color: #f2f2f2; /* Fondo gris claro cuando pasa el ratón */
+    cursor: pointer; /* Cambia el cursor a mano */
+}
+
+/* Efecto hover para las celdas */
+table td:hover {
+    background-color: #e9ecef; /* Gris más claro para las celdas al pasar el ratón */
+}
+
+/* Bordes redondeados para las filas */
+table tr {
+    border-bottom: 2px solid #ddd;
+}
+
+/* Estilo para los mensajes de "No se encontraron registros" */
+.no-registros {
+    color: red;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Estilo del encabezado principal */
+header h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #343a40;
+    margin-top: 80px;
+    font-weight: bold;
+}
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    background-color: #343a40;
+    padding: 15px 0;
+    border-bottom: 3px solid #444;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Estilo de los enlaces dentro de la barra de navegación */
+.navbar a {
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    margin: 0 10px; /* Espacio entre los enlaces */
+}
+
+/* Efecto hover para los enlaces */
+.navbar a:hover {
+    background-color: #007bff;
+}
+
+/* Estilos para el formulario de búsqueda */
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+form label {
+    font-size: 18px;
+    color: #343a40;
+    margin-right: 10px;
+}
+
+form input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    transition: all 0.3s ease;
+}
+
+form input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+form button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+form button:focus {
+    outline: none;
+}

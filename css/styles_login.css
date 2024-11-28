@@ -1,0 +1,118 @@
+/* Estructura general */
+body {
+    background-color: #e0f7fa; /* Fondo celeste claro */
+    font-family: Arial, sans-serif;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #0047ab; /* Azul oscuro */
+    color: #ffffff;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilo para la imagen dinámica */
+.imagen-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#imagenRol {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Campos del formulario */
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #cccccc;
+    border-radius: 30px;
+    font-size: 1em;
+    background-color: #f7f9fb;
+}
+
+/* Botón de inicio de sesión */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #0047ab; /* Azul oscuro */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Bajamos el botón */
+}
+
+input[type="submit"]:hover {
+    background-color: #003380; /* Azul un poco más oscuro */
+}
+
+/* Enlace de registro */
+h3 {
+    font-size: 0.9em;
+    color: #333333;
+}
+
+.btn-registrar {
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #ffa726; /* Naranja */
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn-registrar a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.btn-registrar:hover {
+    background-color: #ffb74d; /* Naranja más claro */
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #0047ab; /* Azul oscuro */
+    color: #ffffff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.8em;
+}
+
+/* Estilo del CAPTCHA */
+.g-recaptcha {
+    margin: 30px auto; /* Separa más el CAPTCHA */
+    display: flex;
+    justify-content: center;
+}

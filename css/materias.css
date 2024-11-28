@@ -1,0 +1,100 @@
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos uniformemente */
+    background-color: #343a40;
+    padding: 15px 0; /* Relleno solo en la parte superior e inferior */
+    border-bottom: 3px solid #444;
+    width: 100vw; /* Asegura que ocupe el ancho completo de la ventana */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+/* Estilo de los enlaces dentro de la barra de navegación */
+.navbar a {
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para los íconos dentro de la barra de navegación */
+.navbar i {
+    margin-right: 8px;
+}
+/* Estilos de la tabla */
+.table-auto {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-auto th,
+.table-auto td {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.table-auto th {
+    background-color: #f4f4f4;
+    text-align: left;
+}
+
+.table-auto tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Modal */
+#modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.modal-header {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Botones de acción */
+button[type="submit"] {
+    background-color: #e53e3e;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #c53030;
+}

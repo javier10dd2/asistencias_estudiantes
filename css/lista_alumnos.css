@@ -1,0 +1,100 @@
+/* Asegura que el body y el html no tengan márgenes que afecten la barra */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos uniformemente */
+    background-color: #343a40; /* Gris oscuro */
+    padding: 15px 0; /* Relleno solo en la parte superior e inferior */
+    border-bottom: 3px solid #444;
+    width: 100vw; /* Asegura que ocupe el ancho completo de la ventana */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+/* Estilo de los enlaces dentro de la barra de navegación */
+.navbar a {
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover para los enlaces */
+.navbar a:hover {
+    background-color: #007bff; /* Azul claro en hover */
+}
+
+/* Ajusta el contenedor principal para no solaparse con la barra */
+.container {
+    margin-top: 100px; /* Ajusta según la altura de la barra */
+}
+
+/* Estilos para los botones */
+.btn-primary {
+    background-color: #003366; /* Azul oscuro */
+    border-color: #00224d;
+}
+
+.btn-primary:hover {
+    background-color: #00224d;
+    border-color: #001a33;
+}
+
+.btn-warning {
+    background-color: #ff9800;
+    border-color: #e68900;
+}
+
+.btn-warning:hover {
+    background-color: #e68900;
+    border-color: #c77e00;
+}
+
+.btn-danger {
+    background-color: #d32f2f;
+    border-color: #c62828;
+}
+
+.btn-danger:hover {
+    background-color: #c62828;
+    border-color: #b71c1c;
+}
+
+/* Estilo de la tabla */
+.table th, .table td {
+    text-align: center;
+    font-weight: bold;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #e0e0e0; /* Gris claro al pasar el ratón */
+}
+
+.btn-sm {
+    padding: 10px 20px;
+}
+
+/* Estilos para la cabecera */
+.header {
+    background-color: #004d99;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 24px;
+    font-weight: bold;
+}

@@ -1,0 +1,130 @@
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos uniformemente */
+    background-color: #343a40;
+    padding: 15px 0; /* Relleno solo en la parte superior e inferior */
+    border-bottom: 3px solid #444;
+    width: 100vw; /* Asegura que ocupe el ancho completo de la ventana */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+/* Estilo de los enlaces dentro de la barra de navegación */
+.navbar a {
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para los íconos dentro de la barra de navegación */
+.navbar i {
+    margin-right: 8px;
+}
+
+/* Efecto hover para los enlaces */
+.navbar a:hover {
+    background-color: #007bff;
+}
+
+/* Contenedor principal */
+.container {
+    margin-top: 120px; /* Para evitar que el contenido se oculte bajo la barra de navegación fija */
+    padding: 2rem;
+}
+
+/* Mensajes de éxito o error */
+.text-green-600 {
+    color: #16a34a;
+}
+
+.text-red-600 {
+    color: #dc2626;
+}
+
+/* Estilo para la tabla */
+.table-auto {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table-auto th,
+.table-auto td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.table-auto th {
+    text-align: left;
+    background-color: #f9fafb;
+}
+
+/* Estilos para los botones */
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Botón principal */
+.bg-purple-600 {
+    background-color: #6b46c1;
+}
+
+.bg-purple-600:hover {
+    background-color: #553c9a;
+}
+
+/* Botón de eliminar */
+.bg-red-600 {
+    background-color: #e53e3e;
+}
+
+.bg-red-600:hover {
+    background-color: #c53030;
+}
+
+/* Botón de cancelar */
+.text-gray-600 {
+    color: #4b5563;
+}
+
+.text-gray-600:hover {
+    color: #2d3748;
+}
+
+/* Modal de Registro */
+.modal-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Entrada de formulario */
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilos de transición para los botones */
+.transition-all {
+    transition: all 0.3s ease;
+}
